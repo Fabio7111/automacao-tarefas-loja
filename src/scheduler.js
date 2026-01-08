@@ -4,7 +4,7 @@ const enviarWhatsApp = require("./whatsapp");
 
 console.log("✅ Scheduler ativo – WhatsApp conectado");
 
-cron.schedule("*/1 * * * *", async () => {
+cron.schedule("0 8 * * *", async () => {
   try {
     const mensagem = await montarMensagem();
 
